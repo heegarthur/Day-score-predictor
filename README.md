@@ -2,6 +2,7 @@
 
 browser site [here](https://heegarthur.github.io/Day-score-predictor/)
 
+you can also choose [the python version](https://github.com/heegarthur/Day-score-predictor/blob/main/main_neural.py/)
 ---
 
 ## 💬 Feature request
