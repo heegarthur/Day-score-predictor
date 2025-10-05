@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayscore predictor</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <h1>Dayscore predictor</h1>
+
+    <div>
+        <input class="input" type="number" id="score" placeholder="Score (1-100)" min="1" max="100">
+        <input class="input" type="text" id="text" placeholder="1 word description of today">
+        <button class="button_general" onclick="saveDay()">Save
+        </button>
+    </div>
+    <br>
+    <div>
+        <button class="button_general" onclick="predict(0)">Predict today</button>
+        <button class="button_general" onclick="predict(1)">Predict tommorow</button>
+        <br>
+        <input class="input" type="text" id="dayshift" placeholder="For example +3 or -5">
+        <button class="button_general" onclick="predictShift()">Predict over X days</button>
+    </div>
+
+    <div id="output"></div>
+
+    <button class="button" onclick="downloadCSV()">
+        <span class="button_lg">
+            <span class="button_sl"></span>
+            <span class="button_text">Download all data</span>
+        </span>
+    </button>
+
+</body>
+
+</html>
